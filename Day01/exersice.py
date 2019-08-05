@@ -56,7 +56,18 @@
 # print(s)
 
 # -- 1~10的乘积
-s = 1
-for x in range(1,11):
-    s *= x
-print(s)
+# s = 1
+# # for x in range(1,11):
+# #     s *= x
+# # print(s)
+
+
+#---------------------------------
+# tuple01 = ("string", "world", 1, 2, 3, 4, 6, 9, 10)
+#
+# print(tuple01[2:])
+#
+# list01 = list(tuple01[2:])
+# print(list01)
+
+
