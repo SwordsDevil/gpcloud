@@ -18,3 +18,4 @@ for i in range(len(list)):
 
 for i in list:
     print(i)
+

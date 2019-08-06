@@ -15,3 +15,9 @@ for i in range(len(list01)):
             list01[j],list01[j+1] = list01[j+1],list01[j]
         j +=1
 print(list01)
+
+
+for i in range(len(list01)):
+    for j in range(len(list01) -i -1):
+        if list01[j] > list01[j+1]:
+            list01[j],list01[j+1] = list01[j+1], list01[j]
