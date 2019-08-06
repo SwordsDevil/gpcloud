@@ -26,26 +26,26 @@ print(string02.rstrip())
 
 #取出元组中的数字
 tuple01 = ("string", "world", 1, 2, 3, 4, 6, 9, 10)
-list = []
+listx = []
 for i in range(len(tuple01)):
-    list.append(tuple01[i])
-list.pop(0)
-list.pop(0)
-print(list)
+    if type(tuple01[i]) == int:
+        listx.append(tuple01[i])
+print(listx)
 
 
 #把数字取出放入总列表中
 list02 =  ["string", "tuple", "list", (1, 2, 3, 4, 5), [6, 7]]
-list03 = []
-for i in list02[3]:
-    list03.append(i)
-
-list04 = list02[4]
-list02.pop(3)
-list02.pop(3)
-list02.extend(list03)
-list02.extend(list04)
-print(list02)
+result = []
+for element in list02:
+    if type(element) == tuple:
+        for i in element:
+            result.append(i)
+    elif type(element) == list:
+        for i in element:
+            result.append(i)
+    else:
+        result.append(element)
+print(result)
 
 
 
