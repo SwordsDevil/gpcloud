@@ -7,13 +7,13 @@
 
 
 ipaddr = {'192.168.40.132':23,'1.32.42.32':42,'8.8.8.8':62,'1.1.1.1':32}
-# 查看字典键-key
-# for key in ipaddr.keys():
-#     print(key, ":",ipaddr[key])
+#查看字典键-key
+for key in ipaddr.keys():
+    print(key, ":",ipaddr[key])
 #查看字典值-values
-# for vals in  ipaddr.values():
-#     print(vals)
-# print(ipaddr.values())
+for vals in  ipaddr.values():
+    print(vals)
+print(ipaddr.values())
 
 #查看字典键值对-元组形式
 for item in ipaddr.items():
