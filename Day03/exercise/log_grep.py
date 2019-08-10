@@ -25,13 +25,18 @@ def getCode(path):
             else:
                 codes[code] +=1
         codes = dict(sorted(codes.items(),key=lambda x:x[1],reverse=True))
-
+        #删除没有的状态码
         for element in list(codes):
             if element not in code_number:
                 codes.pop(element)
         print(codes)
+        #选出有的状态码
+        # codes_some = {}
+        # for element in codes.keys():
+        #     if element in code_number:
+        #         codes_some[element] = codes[element]
+        # print(codes_some)
 getCode('../txtFile/access_log')
-
 
 def getResource(path):
     sources = {}
