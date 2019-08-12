@@ -36,3 +36,19 @@ print(file)
 
 dir = os.path.dirname('H:\Download')
 print(dir)
+
+# files,dirs =0,0
+# def dirAmount(path):
+#     for file in os.listdir(path):
+#         fileAbs = os.path.join(path,file)
+#         if os.path.isdir(fileAbs):
+#             global dirs
+#             dirs += 1
+#             dirAmount(fileAbs)
+#         else:
+#             global files
+#             files +=1
+#     return dirs,files
+#
+# dirA,fileA = dirAmount('H:\pycharm_Project\gpcloud')
+# print(dirA,fileA)

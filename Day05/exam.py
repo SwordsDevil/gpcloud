@@ -1,4 +1,4 @@
-# import json
+import json
 #
 # ips = {}
 # with open(file='access.log',mode='r',encoding='utf8') as file:
@@ -82,20 +82,25 @@ import json
 #             ips.setdefault(ip,1)
 #         else:
 #             ips[ip] +=1
-#     ips = sorted(ips.items(),key=lambda x: x[1],reverse=True)
-#     print(ips)
+# ips = dict(sorted(ips.items(),key=lambda x: x[1],reverse=True))
+# print(ips)
 # def ipAddr(element):
-#     if ips[1] >100:
+#     if element[1] > 100:
 #         return ips
-#ips_list = ips.items()
-# ips_hunderd = filter(ipAddr(),ips_list())
+# ips_list = ips.items()
+# ips_hunderd = filter(ipAddr,ips_list)
 # print(list(ips_hunderd))
 
 
-# def stepCound(step):
-#     def stepS(step):
-#         step +=1
-#         return step
-#     return stepS
+def stepCound(step):
+    print('请输入步数：{}'.format(step))
+    def stepS():
+        nonlocal step
+        step +=1
+        return step
+    return stepS
+
+opera = stepCound(10)
+print(opera())
 
 
