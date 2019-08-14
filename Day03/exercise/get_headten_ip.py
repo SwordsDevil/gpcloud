@@ -3,12 +3,16 @@ import json
 
 ips = {}
 with open(file='../txtFile/access_log',mode='r',encoding='utf8') as file:
-    for content in file.readlines():
-        ip = content.split()[0]
-        if ip not in ips.keys():
-            ips.setdefault(ip,1)
-        else:
-            ips[ip] +=1
+    # for content in file.readlines():
+    #     ip = content.split()[0]
+    #     if ip not in ips.keys():
+    #         ips.setdefault(ip,1)
+    #     else:
+    #         ips[ip] +=1
+    for lines in file:
+        ip = lines.split()[0]
+        ips.setdefault(ip,0)
+        ips[ip] += 1
 ips = sorted(ips.items(),key=lambda x: x[1],reverse=True)
 ips = dict(ips[0:10])
 print(ips)
