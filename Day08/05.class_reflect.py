@@ -1,7 +1,7 @@
 #reflect
 #2019/08/14
 
-class webopera:
+class Webopera:
 
     def __init__(self,url,token):
         self.url = url
@@ -18,17 +18,17 @@ class webopera:
         print('''welcome to webopera
         {}'''.format(content))
 
-# web = webopera('www.baidu.com','login')
-# print(hasattr(web,'url'))
-#
-# print(getattr(web,'token'))
+web = webopera('www.baidu.com','login')
+print(hasattr(web,'url'))
 
-# setattr(web,'content','complete')
-# print(web.content)
+print(getattr(web,'token'))
+
+setattr(web,'content','complete')
+print(web.content)
 
 url = input('请输入url:')
 token = input('请输入token:')
-web = webopera(url=url,token=token)
+web = Webopera(url=url,token=token)
 if hasattr(web,token):
     func = getattr(web,token)
     if token == 'welcome':

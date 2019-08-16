@@ -74,33 +74,34 @@ import json
 
 import json
 
-# ips = {}
-# with open(file='../Day03/txtFile/access_log',mode='r',encoding='utf8') as file:
-#     for content in file.readlines():
-#         ip = content.split()[0]
-#         if ip not in ips.keys():
-#             ips.setdefault(ip,1)
-#         else:
-#             ips[ip] +=1
-# ips = dict(sorted(ips.items(),key=lambda x: x[1],reverse=True))
+ips = {}
+with open(file='../Day03/txtFile/access_log',mode='r',encoding='utf8') as file:
+    for content in file.readlines():
+        ip = content.split()[0]
+        ips.setdefault(ip,0)
+        ips[ip] += 1
+ips = dict(sorted(ips.items(),key=lambda x: x[1],reverse=True))
 # print(ips)
+
 # def ipAddr(element):
 #     if element[1] > 100:
 #         return ips
 # ips_list = ips.items()
 # ips_hunderd = filter(ipAddr,ips_list)
 # print(list(ips_hunderd))
+def ipsHunderd(element):
+    if element[1] > 100:
+        return ips
 
-
-def stepCound(step):
-    print('请输入步数：{}'.format(step))
-    def stepS():
-        nonlocal step
-        step +=1
-        return step
-    return stepS
-
-opera = stepCound(10)
-print(opera())
-
-
+listA = filter(ipsHunderd,ips.items())
+print(list(listA))
+# def stepCound(step):
+#     print('请输入步数：{}'.format(step))
+#     def stepS():
+#         nonlocal step
+#         step +=1
+#         return step
+#     return stepS
+#
+# opera = stepCound(10)
+# print(opera())
