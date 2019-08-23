@@ -95,6 +95,9 @@ def ipsHunderd(element):
 
 listA = filter(ipsHunderd,ips.items())
 print(list(listA))
+
+
+
 # def stepCound(step):
 #     print('请输入步数：{}'.format(step))
 #     def stepS():

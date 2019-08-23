@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../gpcloud/.idea/gpcloud.iml" filepath="$PROJECT_DIR$/../gpcloud/.idea/gpcloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gpcloud.git.iml" filepath="$PROJECT_DIR$/.idea/gpcloud.git.iml" />
     </modules>
   </component>
