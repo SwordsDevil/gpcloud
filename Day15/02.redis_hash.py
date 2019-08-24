@@ -39,3 +39,4 @@ if client.hexists('cpuInfo','user'):
     print(True)
 else:
     print(False)
+

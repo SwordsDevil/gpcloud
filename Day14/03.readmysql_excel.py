@@ -14,6 +14,7 @@ cursors = client.cursor()
 sql = "select * from {}"
 cursors.execute(sql.format('FirstStage'))
 data = cursors.fetchall()
+print(data)
 file = openpyxl.Workbook()
 sheet = file.active
 sheet.append(['ID','Name','FirstExam','SecondExam','PointsDeffrence'])
@@ -21,3 +22,5 @@ for info in data:
     sheet.append(info)
 file.save('./fileExcel/grade.xlsx')
 client.close()
+
+

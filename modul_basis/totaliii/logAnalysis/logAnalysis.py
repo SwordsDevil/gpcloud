@@ -21,6 +21,6 @@ def sourceAnalysis(path):
     source = {}
     with open(file=path,mode='r',encoding='utf8') as log:
         for lines in log:
-            source.setdefault(lines.split()[0],0)
-            source[lines.split()[0]] += 1
+            source.setdefault(lines.split()[6],0)
+            source[lines.split()[6]] += 1
     return source

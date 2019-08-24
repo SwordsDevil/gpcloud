@@ -6,3 +6,5 @@ this is a error
 Wed,2019-08-21 22:&M:29 - rotateSize - ERROR - H:/pycharm_Project/gpcloud.git/Day13/07.logging03.py - this is a error
 Wed,2019-08-21 22:&M:10 - rotateSize - ERROR - H:/pycharm_Project/gpcloud.git/Day13/07.logging03.py - this is a error
 Wed,2019-08-21 22:20:46 - rotate - ERROR - H:/pycharm_Project/gpcloud.git/Day13/07.logging03.py - this is a error
+Sat,2019-08-24 16:22:03 - rotate - WARNING - H:/pycharm_Project/gpcloud.git/Day13/07.logging03.py - this is a wraning
+Sat,2019-08-24 16:22:38 - rotate - ERROR - H:/pycharm_Project/gpcloud.git/Day13/07.logging03.py - this is a error

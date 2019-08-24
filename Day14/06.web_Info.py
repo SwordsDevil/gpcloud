@@ -49,10 +49,10 @@ client = pymysql.connect(
     charset='utf8'
 )
 cursors = client.cursor()
-# puv = "insert into PUv values({},{},{})"
-# cursors.execute(puv.format(date,Pv,Uv))
-# codes = "insert into code values({},{},{},{},{},{},{},{})"
-# cursors.execute(codes.format(date,code[0],code[1],code[2],code[3],code[4],code[5],code[6]))
+puv = "insert into PUv values({},{},{})"
+cursors.execute(puv.format(date,Pv,Uv))
+codes = "insert into code values({},{},{},{},{},{},{},{})"
+cursors.execute(codes.format(date,code[0],code[1],code[2],code[3],code[4],code[5],code[6]))
 ip = "insert into IpTop values({},'{}',{},'{}',{},'{}',{})"
 cursors.execute(ip.format(date,ips[0][0],ips[0][1],ips[1][0],ips[1][1],ips[2][0],ips[2][1]))
 

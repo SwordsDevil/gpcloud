@@ -32,3 +32,4 @@ logger.setLevel(logging.WARNING)
 logger.addHandler(rotateHnaler)
 
 logger.error('this is a cuowu')
+

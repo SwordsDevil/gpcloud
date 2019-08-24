@@ -12,12 +12,11 @@ data = '39.200.110.135 [ERROR]: no such file or directory.'
 result = re.findall('[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}',data)
 print(result)
 
+
 data = 'abc Abc aBc'
 pattern = re.compile('a.c')
 result = pattern.search(data)
 print(result)
 
-
-data = 'abc DCB aDc'
-result = pattern.sub(repl='4321',string=data,count=1)
+result = pattern.sub(repl='123',string=data,count=2)
 print(result)

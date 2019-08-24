@@ -1,0 +1,4 @@
+Fri,2019-08-23 17:54:49 - root - WARNING - H:/pycharm_Project/gpcloud.git/Day15/04.sentinel_monitor.py - master on ('192.168.40.142', 6381)
+Fri,2019-08-23 17:58:05 - root - WARNING - H:/pycharm_Project/gpcloud.git/Day15/04.sentinel_monitor.py - master on ('192.168.40.142', 6381)
+Fri,2019-08-23 17:58:40 - root - WARNING - H:/pycharm_Project/gpcloud.git/Day15/04.sentinel_monitor.py - master on ('192.168.40.142', 6382)
+Fri,2019-08-23 21:22:59 - root - ERROR - H:/pycharm_Project/gpcloud.git/Day15/05.del_date.py - __init__() got an unexpected keyword argument 'port6'
