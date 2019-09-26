@@ -18,7 +18,7 @@ class Webopera:
         print('''welcome to webopera
         {}'''.format(content))
 
-web = webopera('www.baidu.com','login')
+web = Webopera('www.baidu.com','login')
 print(hasattr(web,'url'))
 
 print(getattr(web,'token'))

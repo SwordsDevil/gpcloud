@@ -1,5 +1,4 @@
 import functools
-
 #让原函数用完装饰器之后还是原函数
 def decorator(func):
     @functools.wraps(func)

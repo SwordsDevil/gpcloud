@@ -16,7 +16,7 @@ def dirAmount(path):
 dirs,files = dirAmount(path)
 print("{} directorys,{} files".format(dirs,files))
 
-import json
+
 
 def ipAmount(path):
     dict01 = {}

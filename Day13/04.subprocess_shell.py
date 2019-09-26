@@ -1,3 +1,4 @@
 import subprocess
 
-subprocess.run('',shell=True)
+result = subprocess.run('hostname',shell=True,stdout=subprocess.PIPE)
+print(result.stdout.decode('utf-8'))

@@ -11,7 +11,7 @@ class Box:
 
     @staticmethod
     def explain(*args,**kwargs):
-        print('''
+        print(''' 
         Thanks you use Box class.
         please input Box's length,width,high
         {}

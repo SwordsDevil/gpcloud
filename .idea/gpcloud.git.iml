@@ -5,6 +5,11 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="gpcloud" />
+    <orderEntry type="module" module-name="WebLogAnalysisApi" />
+    <orderEntry type="module" module-name="WebServerMonitorApi" />
+    <orderEntry type="module" module-name="interviewQuestion" />
+    <orderEntry type="module" module-name="flask_demo" />
+    <orderEntry type="module" module-name="flask_demo" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
